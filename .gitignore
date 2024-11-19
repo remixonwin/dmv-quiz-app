@@ -44,3 +44,6 @@ $RECYCLE.BIN/
 
 # Application specific
 user_stats.json
+
+# Environment variables
+.env.*
