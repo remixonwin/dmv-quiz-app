@@ -37,5 +37,10 @@ ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
 
+# Environment variables
+.env
+.env.*;
+*.env
+
 # Application specific
 user_stats.json
