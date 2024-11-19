@@ -1,61 +1,85 @@
 # DMV Quiz Application
 
-A modern Windows desktop application to help users prepare for their DMV test with interactive quizzes and comprehensive tracking.
+A comprehensive Windows desktop application for driver's license exam preparation.
+
+## Quick Start ⚡
+
+### [⬇️ Download DMVQuiz.exe](https://github.com/remixonwin/dmv-quiz-app/releases/latest/download/DMVQuiz.exe)
+
+1. Click the download link above
+2. Double-click the downloaded `DMVQuiz.exe`
+3. Start practicing for your DMV test!
 
 ## Features
 
-- **Multiple Quiz Modes**
-  - Practice Mode: Unlimited time with immediate feedback
-  - Timed Mode: Test your knowledge under time pressure
-  
-- **Comprehensive Question Categories**
-  - Road Signs
-  - Traffic Rules
-  - Safety
-  - Parking
+- Interactive quiz interface
+- Comprehensive question database
+- Score tracking and progress monitoring
+- User-friendly design
+- Standalone Windows executable
 
-- **Difficulty Levels**
-  - Easy
-  - Medium
-  - Hard
+## Detailed Installation Steps
 
-- **Progress Tracking**
-  - Detailed statistics by category
-  - Performance tracking by difficulty
-  - Session history
-  - High scores
+1. Visit the [Latest Release Page](https://github.com/remixonwin/dmv-quiz-app/releases/latest)
+2. Under "Assets", click `DMVQuiz.exe` to download
+3. If Windows SmartScreen appears:
+   - Click "More info"
+   - Click "Run anyway" (the app is safe but not yet signed)
+4. Double-click `DMVQuiz.exe` to run the application
 
-- **User-Friendly Interface**
-  - Modern dark theme
-  - Color-coded feedback
-  - Intuitive controls
-  - Sound effects (optional)
+No installation required - the application runs directly on Windows!
 
-## Installation
+## System Requirements
 
-1. Download the latest release (`DMVQuiz.exe`)
-2. Run the executable - no installation required!
+- Windows 10 or later
+- No additional software required
 
 ## Usage
 
-1. Select a category and difficulty level
-2. Choose between Practice or Timed mode
-3. Start the quiz and answer questions
-4. Get immediate feedback with color-coded answers
-5. Track your progress in the Statistics section
-
-## Requirements
-
-- Windows 10/11
-- No additional software required
+1. Launch the application by double-clicking `DMVQuiz.exe`
+2. Click "Start Quiz" to begin
+3. Select your answer for each question
+4. View your score and review incorrect answers at the end
+5. Use "Try Again" to restart the quiz
 
 ## Development
 
-Built with:
-- Python 3.11+
-- CustomTkinter 5.2.2
-- Pillow
+To build from source:
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run the application:
+   ```bash
+   python main.py
+   ```
+
+### Building the Executable
+
+To create the executable:
+
+```bash
+pyinstaller --onefile --windowed --name DMVQuiz --icon=src/assets/app.ico --add-data "questions_db.json;." --add-data "src/assets;assets" main.py
+```
+
+## Security
+
+This application prioritizes security:
+- No data collection
+- No internet connection required
+- Local-only operation
+- Secure token management for development
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
 
 ## License
 
-MIT License - feel free to use and modify!
+MIT License - see LICENSE file for details
