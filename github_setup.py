@@ -2,6 +2,8 @@ import os
 import requests
 import subprocess
 import json
+from dotenv import load_dotenv
+import sys
 
 def create_github_repo(token, username, repo_name):
     """Create a new GitHub repository"""
@@ -68,25 +70,27 @@ def push_to_github(username, token, repo_name):
     return True
 
 def main():
+    # Load token from .env file
+    load_dotenv()
+    token = os.getenv('GITHUB_TOKEN')
+    if not token:
+        print("Error: GITHUB_TOKEN not found in .env file")
+        sys.exit(1)
+
     # Configuration
     username = "remixonwin"
     repo_name = "dmv-quiz-app"
     
     print("=== DMV Quiz App - GitHub Setup ===")
-    token = input("Enter your GitHub Personal Access Token: ").strip()
-    
-    if not token:
-        print("Error: Token is required!")
-        return
     
     if create_github_repo(token, username, repo_name):
         if push_to_github(username, token, repo_name):
-            print("\n✓ Setup completed successfully!")
+            print("\nSetup completed successfully!")
             print(f"Visit your repository at: https://github.com/{username}/{repo_name}")
         else:
-            print("\n✗ Failed to push code to GitHub")
+            print("\nFailed to push code to GitHub")
     else:
-        print("\n✗ Repository setup failed")
+        print("\nRepository setup failed")
 
 if __name__ == "__main__":
     main()
