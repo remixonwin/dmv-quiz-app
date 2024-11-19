@@ -1,0 +1,124 @@
+{
+    "Road Signs": {
+        "easy": [
+            {
+                "question": "What does a red octagonal sign mean?",
+                "options": ["Stop", "Yield", "Slow", "Go"],
+                "correct": 0,
+                "explanation": "A red octagonal sign always means STOP."
+            },
+            {
+                "question": "What color are warning signs typically?",
+                "options": ["Yellow", "Red", "Green", "Blue"],
+                "correct": 0,
+                "explanation": "Warning signs are typically yellow in color."
+            }
+        ],
+        "medium": [
+            {
+                "question": "What does a yellow diamond sign indicate?",
+                "options": ["Warning", "Stop", "Speed Limit", "Direction"],
+                "correct": 0,
+                "explanation": "Yellow diamond signs indicate warnings."
+            },
+            {
+                "question": "What shape is a railroad crossing sign?",
+                "options": ["Round", "Diamond", "X-shaped", "Square"],
+                "correct": 2,
+                "explanation": "Railroad crossing signs are X-shaped."
+            }
+        ],
+        "hard": [
+            {
+                "question": "What does a pentagonal sign typically indicate?",
+                "options": ["School Zone", "Construction", "Hospital", "Airport"],
+                "correct": 0,
+                "explanation": "Pentagonal signs typically indicate school zones."
+            },
+            {
+                "question": "What does a white rectangular sign with black lettering typically indicate?",
+                "options": ["Regulatory", "Warning", "Guide", "Construction"],
+                "correct": 0,
+                "explanation": "White rectangular signs with black lettering typically indicate regulatory rules."
+            }
+        ]
+    },
+    "Traffic Rules": {
+        "easy": [
+            {
+                "question": "What should you do at a STOP sign?",
+                "options": ["Come to a complete stop", "Slow down", "Keep driving", "Honk horn"],
+                "correct": 0,
+                "explanation": "You must come to a complete stop at a STOP sign."
+            }
+        ],
+        "medium": [
+            {
+                "question": "When must you stop for a school bus?",
+                "options": ["When red lights are flashing", "Never", "Only in school zones", "Only during school hours"],
+                "correct": 0,
+                "explanation": "You must stop when a school bus's red lights are flashing."
+            }
+        ],
+        "hard": [
+            {
+                "question": "What is the 'three-second rule'?",
+                "options": ["Safe following distance", "Turn signal duration", "Parking time limit", "Traffic light wait"],
+                "correct": 0,
+                "explanation": "The three-second rule helps maintain a safe following distance from the vehicle ahead."
+            }
+        ]
+    },
+    "Safety": {
+        "easy": [
+            {
+                "question": "When should you wear a seat belt?",
+                "options": ["Always", "Only on highways", "Only in bad weather", "Never"],
+                "correct": 0,
+                "explanation": "You should always wear a seat belt while in a moving vehicle."
+            }
+        ],
+        "medium": [
+            {
+                "question": "What should you do if your brakes fail?",
+                "options": ["Pump brakes and use emergency brake", "Turn off engine immediately", "Open door and jump", "Speed up"],
+                "correct": 0,
+                "explanation": "If your brakes fail, pump them and use the emergency brake to slow down safely."
+            }
+        ],
+        "hard": [
+            {
+                "question": "What is hydroplaning?",
+                "options": ["Tires lose contact with road due to water", "Engine overheating", "Brake failure", "Tire blowout"],
+                "correct": 0,
+                "explanation": "Hydroplaning occurs when tires lose contact with the road due to water."
+            }
+        ]
+    },
+    "Parking": {
+        "easy": [
+            {
+                "question": "What color is a no-parking curb?",
+                "options": ["Red", "Green", "Blue", "Yellow"],
+                "correct": 0,
+                "explanation": "A red curb indicates no parking is allowed."
+            }
+        ],
+        "medium": [
+            {
+                "question": "How far from a fire hydrant should you park?",
+                "options": ["15 feet", "5 feet", "25 feet", "10 feet"],
+                "correct": 0,
+                "explanation": "You should park at least 15 feet away from a fire hydrant."
+            }
+        ],
+        "hard": [
+            {
+                "question": "When parking on a hill with no curb, which way should you turn your wheels?",
+                "options": ["Away from the road", "Towards the road", "Straight ahead", "Depends on slope"],
+                "correct": 0,
+                "explanation": "When parking on a hill with no curb, turn wheels away from the road."
+            }
+        ]
+    }
+}
